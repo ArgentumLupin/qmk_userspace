@@ -1,4 +1,7 @@
-LTO_ENABLE = yes            # Link Time Optimization enabled
+# BOOTLOADER = rp2040
+
+SERIAL_DRIVER = vendor
+TIO_ENABLE = yes            # Link Time Optimization enabled
 BOOTMAGIC_ENABLE = no       # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = no        # Mouse keys
 EXTRAKEY_ENABLE = no        # Audio control and System control

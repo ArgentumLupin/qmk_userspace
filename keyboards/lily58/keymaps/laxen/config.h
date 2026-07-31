@@ -40,6 +40,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
 
+#define I2C1_SCL_PIN GP3
+#define I2C1_SDA_PIN GP2
 // Underglow
 /*
 #undef RGBLIGHT_LED_COUNT
