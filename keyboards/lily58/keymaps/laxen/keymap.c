@@ -272,10 +272,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         static bool delkey_registered;
         if (record->event.pressed) {
             // Detect the activation of either shift keys
-            if (mod_state & MOD_MASK_CTRL) {
+            if (mod_state & MOD_MASK_ALT) {
                 // First temporarily canceling both shifts so that
                 // shift isn't applied to the KC_DEL keycode
-                del_mods(MOD_MASK_CTRL);
+                del_mods(MOD_MASK_ALT);
                 register_code(KC_DEL);
                 // Update the boolean variable to reflect the status of KC_DEL
                 delkey_registered = true;
